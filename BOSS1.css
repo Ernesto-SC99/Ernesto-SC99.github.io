@@ -1,0 +1,159 @@
+*{ 
+    margin: 0px; 
+	padding: 0px; 
+} 
+
+body 
+{ 
+    background: #9d3939 ; 
+	font-family:sans-serif; 
+    background:rgb(165, 42, 42) fixed;
+} 
+
+header 
+{  
+    background: #597708; 
+	width: 100%; 
+	clear: both; 
+	content: ''; 
+	display.table; 
+    } 
+
+.menu 
+{ 
+    width:900px; 
+	margin: 0 auto; 
+}  
+
+nav 
+{ 
+    float: right;  
+} 
+
+nav ul li 
+{ 
+    list-style: none; 
+	float: left; 
+	margin-left: 55px; 
+	padding: 25px 100; 
+	position: relative; 
+    overflow: hidden;
+} 
+
+nav ul li a 
+{ 
+font-decoration: none; 
+color: rgb(0, 0, 0); 
+font-weight: bold; 
+
+} 
+
+nav ul li a::before 
+{ 
+    display:block 
+	content; ''; 
+	width: 0%; 
+	background:#444; 
+	height: 5px; 
+	top: 0; 
+	position: absolute; 
+	transition: width 0.2s; 
+} 
+
+nav ul li a:hover::before  
+{ 
+    width: 100%; 
+} 
+
+#container
+{ 
+    width: 95%; 
+	margin: 0px auto; 
+	border: 2px solid rgb(163, 198, 6); 
+} 
+
+footer {
+    background-color: #597708;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #ddff00;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+.clearfix 
+{ 
+    clear:both; 
+}  
+
+#contenido1{ 
+    float:left; 
+	width: 30%; 
+	background:#a1c811; 
+	min-height:500px; 
+
+} 
+
+#contenido2{ 
+    float: left; 
+	width: 30%; 
+	background:#66BB6A; 
+	min-height:500px; 
+
+}  
+#contenido3{ 
+    float: left; 
+	width: 30%; 
+	background:#512DA8; 
+	min-height:500px; 
+
+} 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Espacio entre los elementos */
+    max-width: 1000px;
+    margin: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 10px); /* Tres columnas */
+    box-sizing: border-box;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.70);
+}
+
+
+
+
